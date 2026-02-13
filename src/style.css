@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --font-noto-sans-jp: 'Noto Sans JP', sans-serif;
+    --font-noto-serif-jp: 'Noto Serif JP', serif;
+    --background: 60 9% 96%;
+    --foreground: 0 0% 7%;
+    --card: 60 6% 93%;
+    --card-foreground: 0 0% 7%;
+    --popover: 60 9% 96%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 0 0% 7%;
+    --primary-foreground: 60 9% 96%;
+    --secondary: 60 4% 88%;
+    --secondary-foreground: 0 0% 7%;
+    --muted: 60 4% 88%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 24 8% 50%;
+    --accent-foreground: 60 9% 96%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 82%;
+    --input: 0 0% 82%;
+    --ring: 0 0% 7%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
