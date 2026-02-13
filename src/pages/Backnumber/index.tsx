@@ -1,6 +1,5 @@
 import { useEffect } from 'preact/hooks'
 import { useRoute, useLocation } from 'preact-iso'
-import { Footer } from '../../components/Footer'
 import { BacknumberIssue } from '../../components/BacknumberIssue'
 import { period4, period5, period6, placeholderCover } from '../../data/backnumber'
 
@@ -110,7 +109,6 @@ export function Backnumber() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

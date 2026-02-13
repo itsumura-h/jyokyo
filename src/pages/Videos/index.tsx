@@ -1,4 +1,3 @@
-import { Footer } from '../../components/Footer'
 import { VideoItem } from '../../components/VideoItem'
 import { videos } from '../../data/videos'
 
@@ -49,7 +48,6 @@ export function Videos() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

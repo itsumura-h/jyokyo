@@ -7,7 +7,7 @@ const navItems = [
   { label: '書籍', href: '/books' },
   { label: '会社案内', href: '/company' },
   { label: '映像', href: '/videos' },
-  { label: 'お問い合わせ', href: '/contact' },
+  { label: 'お問い合わせ', href: 'https://docs.google.com/forms/d/e/1FAIpQLScnSldFZIH3CQFRrETxLqL1SKdGTPCQGTuEurYTDAKxGRypIA/viewform' },
 ]
 
 export function Header() {

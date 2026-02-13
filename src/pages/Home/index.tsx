@@ -1,6 +1,5 @@
 import { Hero } from '../../components/Hero'
 import { Latest } from "../../components/Latest"
-import { Footer } from '../../components/Footer'
 
 export function Home() {
   return (
@@ -9,7 +8,6 @@ export function Home() {
         <Hero />
         <Latest />
       </main>
-      <Footer />
     </>
   )
 }

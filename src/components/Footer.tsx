@@ -4,12 +4,7 @@ const footerNav = {
     { label: '書籍', href: '/books' },
     { label: '会社案内', href: '/company' },
     { label: '映像', href: '/videos' },
-    { label: 'お問い合わせ', href: '/contact' },
-  ],
-  legal: [
-    { label: 'プライバシーポリシー', href: '#' },
-    { label: '利用規約', href: '#' },
-    { label: '特定商取引法に基づく表示', href: '#' },
+    { label: 'お問い合わせ', href: 'https://docs.google.com/forms/d/e/1FAIpQLScnSldFZIH3CQFRrETxLqL1SKdGTPCQGTuEurYTDAKxGRypIA/viewform' },
   ],
 }
 
@@ -47,39 +42,6 @@ export function Footer() {
                 </a>
               ))}
             </nav>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <p className="text-xs font-medium uppercase tracking-widest text-background/40">
-              Legal
-            </p>
-            <nav className="mt-4 flex flex-col gap-3" aria-label="法的情報">
-              {footerNav.legal.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-sm font-light text-background/60 transition-colors hover:text-background"
-                >
-                  {item.label}
-                </a>
-              ))}
-            </nav>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <p className="text-xs font-medium uppercase tracking-widest text-background/40">
-              Contact
-            </p>
-            <div className="mt-4 flex flex-col gap-3">
-              <a
-                href="mailto:contact@joukyo-shuppan.jp"
-                className="text-sm font-light text-background/60 transition-colors hover:text-background"
-              >
-                contact@veritas-institute.jp
-              </a>
-            </div>
           </div>
         </div>
 

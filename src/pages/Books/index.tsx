@@ -1,4 +1,3 @@
-import { Footer } from '../../components/Footer'
 import { BookIssue } from '../../components/BookIssue'
 import { books, placeholderCover } from '../../data/books'
 
@@ -31,7 +30,6 @@ export function Books() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

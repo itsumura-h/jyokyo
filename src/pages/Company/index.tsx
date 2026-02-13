@@ -1,5 +1,3 @@
-import { Footer } from '../../components/Footer'
-
 export function Company() {
   return (
     <>
@@ -65,7 +63,6 @@ export function Company() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }
