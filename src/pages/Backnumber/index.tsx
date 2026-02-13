@@ -1,21 +1,30 @@
-import { useState } from 'preact/hooks'
+import { useEffect } from 'preact/hooks'
+import { useRoute, useLocation } from 'preact-iso'
 import { Footer } from '../../components/Footer'
 import { BacknumberIssue } from '../../components/BacknumberIssue'
 import { period5, period6, placeholderCover } from '../../data/backnumber'
 
 const periodNavItems = [
-  { id: 'period-6', label: '第6期（2023年-2026年）' },
-  { id: 'period-5', label: '第5期（2018年-2022年）' },
-  { id: 'period-4', label: '第4期（2012年-2018年）' },
-  { id: 'period-3', label: '第3期（2000年-2011年）' },
-  { id: 'period-2', label: '第2期（1900年-2000年）' },
-  { id: 'period-1', label: '第1期（1968年-1976年）' },
+  { id: '6', label: '第6期（2023年-2026年）' },
+  { id: '5', label: '第5期（2018年-2022年）' },
+  { id: '4', label: '第4期（2012年-2018年）' },
+  { id: '3', label: '第3期（2000年-2011年）' },
+  { id: '2', label: '第2期（1900年-2000年）' },
+  { id: '1', label: '第1期（1968年-1976年）' },
 ]
 
 export function Backnumber() {
-  const [selectedPeriod, setSelectedPeriod] = useState('period-6')
+  const { params } = useRoute()
+  const { route } = useLocation()
+  const period = params.period ?? '6'
 
-  const currentPeriod = periodNavItems.find((item) => item.id === selectedPeriod) ?? periodNavItems[0]
+  useEffect(() => {
+    if (!params.period) {
+      route('/backnumber/6', true)
+    }
+  }, [params.period, route])
+
+  const currentPeriod = periodNavItems.find((item) => item.id === period) ?? periodNavItems[0]
   return (
     <>
       <main className="pt-24 min-h-screen">
@@ -37,17 +46,16 @@ export function Backnumber() {
           >
             <div className="flex flex-wrap items-stretch justify-start gap-x-4 md:gap-x-6 overflow-x-auto">
               {periodNavItems.map((item) => (
-                <button
+                <a
                   key={item.id}
-                  type="button"
-                  onClick={() => setSelectedPeriod(item.id)}
+                  href={`/backnumber/${item.id}`}
                   className={`shrink-0 px-4 py-4 md:px-6 text-sm font-light tracking-wide transition-colors hover:text-foreground md:py-4 ${
-                    selectedPeriod === item.id ? 'text-foreground' : 'text-muted-foreground'
+                    period === item.id ? 'text-foreground' : 'text-muted-foreground'
                   }`}
-                  aria-pressed={selectedPeriod === item.id}
+                  aria-current={period === item.id ? 'page' : undefined}
                 >
                   {item.label}
-                </button>
+                </a>
               ))}
             </div>
           </nav>
@@ -58,7 +66,7 @@ export function Backnumber() {
               {currentPeriod.label}
             </h2>
 
-            {selectedPeriod === 'period-6' && (
+            {period === '6' && (
               <div className="mt-12 space-y-24 md:space-y-32">
                 {period6.map((issue) => (
                   <BacknumberIssue
@@ -70,7 +78,7 @@ export function Backnumber() {
               </div>
             )}
 
-            {selectedPeriod === 'period-5' && (
+            {period === '5' && (
               <div className="mt-12 space-y-24 md:space-y-32">
                 {period5.map((issue) => (
                   <BacknumberIssue
@@ -82,7 +90,7 @@ export function Backnumber() {
               </div>
             )}
 
-            {selectedPeriod !== 'period-6' && selectedPeriod !== 'period-5' && (
+            {period !== '6' && period !== '5' && (
               <p className="mt-8 text-sm font-light text-muted-foreground">
                 準備中です。
               </p>

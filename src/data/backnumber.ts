@@ -19,7 +19,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2025-autumn',
     title: '「情況」2025年秋号',
-    coverImage: 'images/backnumber/6/2025autumn.jpg',
+    coverImage: '/images/backnumber/6/2025autumn.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=12516',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0G2YBK1SK/',
     price: '1,500円',
@@ -75,7 +75,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2025-summer',
     title: '「情況」2025年夏号',
-    coverImage: 'images/backnumber/6/2025summer.jpg',
+    coverImage: '/images/backnumber/6/2025summer.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=11685',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0FNFVB9SV/',
     price: '1,500円',
@@ -133,7 +133,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2025-spring',
     title: '「情況」2025年春号',
-    coverImage: 'images/backnumber/6/2025spring.png',
+    coverImage: '/images/backnumber/6/2025spring.png',
     mosakushaUrl: 'https://mosakusha.com/?p=10984',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0F8R9Y6PS/',
     price: '1,500円',
@@ -198,7 +198,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2025-winter',
     title: '「情況」2025年冬号',
-    coverImage: 'images/backnumber/6/2025winter.jpg',
+    coverImage: '/images/backnumber/6/2025winter.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=10097',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0DWNLGCG8/',
     price: '1,500円',
@@ -261,7 +261,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2024-autumn',
     title: '「情況」2024年秋号',
-    coverImage: 'images/backnumber/6/2024autumn.jpg',
+    coverImage: '/images/backnumber/6/2024autumn.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=9534',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0DM9SV69Z/',
     price: '1,500円',
@@ -334,7 +334,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2024-summer',
     title: '「情況」2024年夏号',
-    coverImage: 'images/backnumber/6/2024summer.jpg',
+    coverImage: '/images/backnumber/6/2024summer.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=8904',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0DC7H2H21/',
     price: '1,500円',
@@ -399,7 +399,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2024-spring',
     title: '「情況」2024年春号',
-    coverImage: 'images/backnumber/6/2024spring.jpg',
+    coverImage: '/images/backnumber/6/2024spring.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=8144',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0D3RX9ZVD/',
     price: '1,500円',
@@ -467,7 +467,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2024-winter',
     title: '「情況」2024年冬号',
-    coverImage: 'images/backnumber/6/2024winter.jpg',
+    coverImage: '/images/backnumber/6/2024winter.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=7507',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0CV5YFKBD/',
     price: '1,500円',
@@ -527,7 +527,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2023-autumn',
     title: '「情況」2023年秋号',
-    coverImage: 'images/backnumber/6/2023autumn.png',
+    coverImage: '/images/backnumber/6/2023autumn.png',
     mosakushaUrl: 'https://mosakusha.com/?p=6818',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0CMV6NQZ5/',
     price: '1,500円',
@@ -582,7 +582,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2023-summer',
     title: '「情況」2023年夏号',
-    coverImage: 'images/backnumber/6/2023summer.jpg',
+    coverImage: '/images/backnumber/6/2023summer.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=6153',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0CDJ84P4J/',
     price: '1,500円',
@@ -648,7 +648,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2023-spring',
     title: '「情況」2023年春号',
-    coverImage: 'images/backnumber/6/2023spring.jpg',
+    coverImage: '/images/backnumber/6/2023spring.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=5345',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0C415RF38/',
     price: '1,500円',
@@ -708,7 +708,7 @@ export const period6: BacknumberIssue[] = [
   {
     id: '2023-winter',
     title: '「情況」2023年冬号',
-    coverImage: 'images/backnumber/6/2023winter.jpg',
+    coverImage: '/images/backnumber/6/2023winter.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=4521',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0BV7G6FVB/',
     price: '1,500円',
@@ -758,7 +758,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2022-summer',
     title: '「情況」2022年夏号',
-    coverImage: 'images/backnumber/5/2022summer.jpg',
+    coverImage: '/images/backnumber/5/2022summer.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=2764',
     amazonUrl: 'https://www.amazon.co.jp/dp/B0B5KKBX35/',
     price: '特価（本体1,364円＋税）',
@@ -820,7 +820,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2022-spring',
     title: '「情況」2022年春号',
-    coverImage: 'images/backnumber/5/2022spring.jpg',
+    coverImage: '/images/backnumber/5/2022spring.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=1900',
     amazonUrl: 'https://www.amazon.co.jp/dp/B09X1LN5GK/',
     price: '特価（本体1,364円＋税）',
@@ -879,7 +879,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2022-winter',
     title: '「情況」2022年冬号',
-    coverImage: 'images/backnumber/5/2022winter.jpg',
+    coverImage: '/images/backnumber/5/2022winter.jpg',
     mosakushaUrl: 'https://mosakusha.com/?p=1156',
     amazonUrl: 'https://www.amazon.co.jp/dp/B09PMDJ9D6/',
     price: '特価（本体1,364円＋税）',
@@ -952,7 +952,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2021-autumn',
     title: '「情況」2021年秋号',
-    coverImage: 'images/backnumber/5/2021autumn.jpg',
+    coverImage: '/images/backnumber/5/2021autumn.jpg',
     amazonUrl: 'https://www.amazon.co.jp/dp/B09HG642T7/',
     price: '定価（本体1,091円＋税）',
     tocSections: [
@@ -1006,7 +1006,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2021-summer',
     title: '「情況」2021年夏号',
-    coverImage: 'images/backnumber/5/2021summer.jpg',
+    coverImage: '/images/backnumber/5/2021summer.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2021/07/_2021513.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B098DQC5NV/',
     price: '特価（本体1,364円＋税）',
@@ -1056,7 +1056,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2021-spring',
     title: '「情況」2021年春号',
-    coverImage: 'images/backnumber/5/2021spring.jpg',
+    coverImage: '/images/backnumber/5/2021spring.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2021/04/_2021512.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B091F3LCCT/',
     price: '特価（本体1,364円＋税）',
@@ -1118,7 +1118,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2021-winter',
     title: '「情況」2021年冬号',
-    coverImage: 'images/backnumber/5/2021winter.jpg',
+    coverImage: '/images/backnumber/5/2021winter.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2021/01/_2021511.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B08RBRFJW9/',
     price: '特価（本体1,364円＋税）',
@@ -1175,7 +1175,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2020-autumn',
     title: '「情況」2020年秋号',
-    coverImage: 'images/backnumber/5/2020autumn.jpg',
+    coverImage: '/images/backnumber/5/2020autumn.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2020/10/_2020510.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B08KHGDR2Y/',
     price: '定価（本体1,091円＋税）',
@@ -1230,7 +1230,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2020-summer',
     title: '「情況」2020年夏号',
-    coverImage: 'images/backnumber/5/2020summer.jpg',
+    coverImage: '/images/backnumber/5/2020summer.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2020/07/_202059.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B08BWD2Y81/',
     price: '定価（本体1,364円＋税）',
@@ -1284,7 +1284,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2020-spring',
     title: '「情況」2020年春号',
-    coverImage: 'images/backnumber/5/2020spring.jpg',
+    coverImage: '/images/backnumber/5/2020spring.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2020/04/_202058.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B086ML4PG8/',
     price: '定価（本体1,091円＋税）',
@@ -1339,7 +1339,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2020-winter',
     title: '「情況」2020年冬号',
-    coverImage: 'images/backnumber/5/2020winter.jpg',
+    coverImage: '/images/backnumber/5/2020winter.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2020/01/_202057.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B082JPTR1J',
     price: '定価（本体1,091円＋税）',
@@ -1386,7 +1386,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2019-autumn',
     title: '「情況」2019年秋号',
-    coverImage: 'images/backnumber/5/2019autumn.png',
+    coverImage: '/images/backnumber/5/2019autumn.png',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2019/10/_201956.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B07YMFZ5HJ',
     price: '定価（本体1,091円＋税）',
@@ -1441,7 +1441,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2019-summer',
     title: '「情況」2019年夏号',
-    coverImage: 'images/backnumber/5/2019summer.jpg',
+    coverImage: '/images/backnumber/5/2019summer.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2019/07/_201955.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B07SR84PHZ',
     price: '定価（本体1,091円＋税）',
@@ -1491,7 +1491,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2019-spring',
     title: '「情況」2019年春号',
-    coverImage: 'images/backnumber/5/2019spring.png',
+    coverImage: '/images/backnumber/5/2019spring.png',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2019/04/_201954.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B07PFRTB38',
     price: '定価（本体1,111円＋税）',
@@ -1545,7 +1545,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2019-winter',
     title: '「情況」2019年冬号',
-    coverImage: 'images/backnumber/5/2019winter.jpg',
+    coverImage: '/images/backnumber/5/2019winter.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2019/01/_201953.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B07KZKCGCY',
     price: '定価（本体1,111円＋税）',
@@ -1604,7 +1604,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2018-autumn',
     title: '「情況」2018年秋号',
-    coverImage: 'images/backnumber/5/2018autumn.jpg',
+    coverImage: '/images/backnumber/5/2018autumn.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2018/10/_201852.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B07H657X98',
     price: '定価（本体1,111円＋税）',
@@ -1644,7 +1644,7 @@ export const period5: BacknumberIssue[] = [
   {
     id: '2018-summer',
     title: '「情況」2018年夏号',
-    coverImage: 'images/backnumber/5/2018summer.jpg',
+    coverImage: '/images/backnumber/5/2018summer.jpg',
     mosakushaUrl: 'https://www.mosakusha.com/newitems/2018/07/_20185.html',
     amazonUrl: 'https://www.amazon.co.jp/dp/B07D58QDLN',
     price: '定価（本体1,111円＋税）',

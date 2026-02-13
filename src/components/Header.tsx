@@ -33,7 +33,9 @@ export function Header() {
               key={item.href}
               href={item.href}
               className={`text-sm font-light tracking-wide transition-colors hover:text-foreground ${
-                url === item.href ? 'text-foreground' : 'text-muted-foreground'
+                url === item.href || (item.href !== '/' && url.startsWith(item.href + '/'))
+                  ? 'text-foreground'
+                  : 'text-muted-foreground'
               }`}
             >
               {item.label}
@@ -63,9 +65,11 @@ export function Header() {
               <a
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-light tracking-wide transition-colors hover:text-foreground ${
-                  url === item.href ? 'text-foreground' : 'text-muted-foreground'
-                }`}
+              className={`text-sm font-light tracking-wide transition-colors hover:text-foreground ${
+                url === item.href || (item.href !== '/' && url.startsWith(item.href + '/'))
+                  ? 'text-foreground'
+                  : 'text-muted-foreground'
+              }`}
                 onClick={() => setMenuOpen(false)}
               >
                 {item.label}

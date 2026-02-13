@@ -15,7 +15,7 @@ export function App() {
       <Header />
       <Router>
         <Route path="/" component={Home} />
-        <Route path="/backnumber" component={Backnumber} />
+        <Route path="/backnumber/:period?" component={Backnumber} />
         <Route path="/books" component={Books} />
         <Route path="/company" component={Company} />
         <Route path="/videos" component={Videos} />
