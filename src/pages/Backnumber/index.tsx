@@ -2,7 +2,7 @@ import { useEffect } from 'preact/hooks'
 import { useRoute, useLocation } from 'preact-iso'
 import { Footer } from '../../components/Footer'
 import { BacknumberIssue } from '../../components/BacknumberIssue'
-import { period5, period6, placeholderCover } from '../../data/backnumber'
+import { period4, period5, period6, placeholderCover } from '../../data/backnumber'
 
 const periodNavItems = [
   { id: '6', label: '第6期（2023年-2026年）' },
@@ -90,7 +90,19 @@ export function Backnumber() {
               </div>
             )}
 
-            {period !== '6' && period !== '5' && (
+            {period === '4' && (
+              <div className="mt-12 space-y-24 md:space-y-32">
+                {period4.map((issue) => (
+                  <BacknumberIssue
+                    key={issue.id}
+                    issue={issue}
+                    coverImage={issue.coverImage || placeholderCover}
+                  />
+                ))}
+              </div>
+            )}
+
+            {period !== '6' && period !== '5' && period !== '4' && (
               <p className="mt-8 text-sm font-light text-muted-foreground">
                 準備中です。
               </p>
