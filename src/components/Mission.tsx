@@ -1,3 +1,5 @@
+import { withBasePath } from '../lib/basePath'
+
 export function Mission() {
   return (
     <section className="bg-foreground py-24 md:py-32">
@@ -17,7 +19,7 @@ export function Mission() {
         <div className="mt-16 grid gap-4 md:grid-cols-2">
           <div className="relative aspect-[4/3] overflow-hidden">
             <img
-              src="/images/research.svg"
+              src={withBasePath('/images/research.svg')}
               alt="独自の調査・研究による深い分析"
               className="h-full w-full object-cover"
               loading="lazy"
@@ -25,7 +27,7 @@ export function Mission() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden">
             <img
-              src="/images/analysis.svg"
+              src={withBasePath('/images/analysis.svg')}
               alt="報道の裏側を読み解く調査分析"
               className="h-full w-full object-cover"
               loading="lazy"

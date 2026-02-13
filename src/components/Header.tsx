@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks'
 import { useLocation } from 'preact-iso'
 import { Menu, X } from 'lucide-preact'
+import { stripBasePath, withBasePath } from '../lib/basePath'
 
 const navItems = [
   { label: 'バックナンバー', href: '/backnumber' },
@@ -12,13 +13,14 @@ const navItems = [
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const { url } = useLocation()
+  const { path } = useLocation()
+  const currentPath = stripBasePath(path)
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-border">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <div>
-          <a href="/" className="font-serif text-xl font-bold tracking-widest text-foreground">
+          <a href={withBasePath('/')} className="font-serif text-xl font-bold tracking-widest text-foreground">
             情況出版
           </a>
           <p className="text-xs font-light uppercase tracking-[0.3em] text-muted-foreground">
@@ -31,9 +33,9 @@ export function Header() {
             {navItems.map((item) => (
             <a
               key={item.href}
-              href={item.href}
+              href={withBasePath(item.href)}
               className={`text-sm font-light tracking-wide transition-colors hover:text-foreground ${
-                url === item.href || (item.href !== '/' && url.startsWith(item.href + '/'))
+                currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href + '/'))
                   ? 'text-foreground'
                   : 'text-muted-foreground'
               }`}
@@ -64,9 +66,9 @@ export function Header() {
             {navItems.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={withBasePath(item.href)}
               className={`text-sm font-light tracking-wide transition-colors hover:text-foreground ${
-                url === item.href || (item.href !== '/' && url.startsWith(item.href + '/'))
+                currentPath === item.href || (item.href !== '/' && currentPath.startsWith(item.href + '/'))
                   ? 'text-foreground'
                   : 'text-muted-foreground'
               }`}

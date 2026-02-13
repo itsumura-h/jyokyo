@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'preact/hooks'
+import { withBasePath } from '../lib/basePath'
 
 const services = [
   {
@@ -67,7 +68,7 @@ export function Services() {
           >
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
-                src={service.image}
+                src={withBasePath(service.image)}
                 alt={service.title}
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
