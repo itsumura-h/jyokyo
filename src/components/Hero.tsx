@@ -1,9 +1,11 @@
+import { withBasePath } from '../lib/basePath'
+
 export function Hero() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
       {/* Background Image */}
       <img
-        src="/images/humanities-forum.jpg"
+        src={withBasePath('/images/humanities-forum.jpg')}
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
         aria-hidden="true"

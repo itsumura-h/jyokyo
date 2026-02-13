@@ -7,18 +7,39 @@ import { Books } from './pages/Books'
 import { Company } from './pages/Company'
 import { Videos } from './pages/Videos'
 import { NotFound } from './pages/_404'
+import { getBasePathPrefix } from './lib/basePath'
 import './style.css'
 
+function getPrefixedRoute(basePathPrefix: string, path: string) {
+  if (!basePathPrefix) {
+    return path
+  }
+
+  return path === '/' ? basePathPrefix : `${basePathPrefix}${path}`
+}
+
 export function App() {
+  const basePathPrefix = getBasePathPrefix()
+  const hasBasePathPrefix = basePathPrefix.length > 0
+
   return (
-    <LocationProvider>
+    <LocationProvider scope={basePathPrefix || undefined}>
       <Header />
       <Router>
         <Route path="/" component={Home} />
+        {hasBasePathPrefix ? <Route path={getPrefixedRoute(basePathPrefix, '/')} component={Home} /> : null}
         <Route path="/backnumber/:period?" component={Backnumber} />
+        {hasBasePathPrefix ? (
+          <Route path={getPrefixedRoute(basePathPrefix, '/backnumber/:period?')} component={Backnumber} />
+        ) : null}
         <Route path="/books" component={Books} />
+        {hasBasePathPrefix ? <Route path={getPrefixedRoute(basePathPrefix, '/books')} component={Books} /> : null}
         <Route path="/company" component={Company} />
+        {hasBasePathPrefix ? (
+          <Route path={getPrefixedRoute(basePathPrefix, '/company')} component={Company} />
+        ) : null}
         <Route path="/videos" component={Videos} />
+        {hasBasePathPrefix ? <Route path={getPrefixedRoute(basePathPrefix, '/videos')} component={Videos} /> : null}
         <Route default component={NotFound} />
       </Router>
       <Footer />

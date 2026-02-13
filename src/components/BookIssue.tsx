@@ -1,4 +1,5 @@
 import type { Book } from '../data/books'
+import { withBasePath } from '../lib/basePath'
 
 interface BookIssueProps {
   book: Book
@@ -13,7 +14,7 @@ export function BookIssue({ book, coverImage }: BookIssueProps) {
         <div className="aspect-[3/4] w-full max-w-[280px] overflow-hidden md:max-w-none">
           {coverImage ? (
             <img
-              src={coverImage}
+              src={withBasePath(coverImage)}
               alt={`${book.title} 表紙`}
               className="h-full w-full object-contain"
             />

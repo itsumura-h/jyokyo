@@ -2,6 +2,7 @@ import { useEffect } from 'preact/hooks'
 import { useRoute, useLocation } from 'preact-iso'
 import { BacknumberIssue } from '../../components/BacknumberIssue'
 import { period4, period5, period6, placeholderCover } from '../../data/backnumber'
+import { withBasePath } from '../../lib/basePath'
 
 const periodNavItems = [
   { id: '6', label: '第6期（2023年-2026年）' },
@@ -19,7 +20,7 @@ export function Backnumber() {
 
   useEffect(() => {
     if (!params.period) {
-      route('/backnumber/6', true)
+      route(withBasePath('/backnumber/6'), true)
     }
   }, [params.period, route])
 
@@ -47,7 +48,7 @@ export function Backnumber() {
               {periodNavItems.map((item) => (
                 <a
                   key={item.id}
-                  href={`/backnumber/${item.id}`}
+                  href={withBasePath(`/backnumber/${item.id}`)}
                   className={`shrink-0 px-4 py-4 md:px-6 text-sm font-light tracking-wide transition-colors hover:text-foreground md:py-4 ${
                     period === item.id ? 'text-foreground' : 'text-muted-foreground'
                   }`}

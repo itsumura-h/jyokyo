@@ -1,3 +1,5 @@
+import { withBasePath } from '../lib/basePath'
+
 const footerNav = {
   navigation: [
     { label: 'バックナンバー', href: '/backnumber' },
@@ -16,7 +18,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <a
-              href="/"
+              href={withBasePath('/')}
               className="font-serif text-xl font-bold tracking-widest text-background"
             >
               情況出版
@@ -35,7 +37,7 @@ export function Footer() {
               {footerNav.navigation.map((item) => (
                 <a
                   key={item.href}
-                  href={item.href}
+                  href={withBasePath(item.href)}
                   className="text-sm font-light text-background/60 transition-colors hover:text-background"
                 >
                   {item.label}

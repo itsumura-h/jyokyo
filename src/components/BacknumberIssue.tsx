@@ -1,4 +1,5 @@
 import type { BacknumberIssue as BacknumberIssueType } from '../data/backnumber'
+import { withBasePath } from '../lib/basePath'
 
 interface BacknumberIssueProps {
   issue: BacknumberIssueType
@@ -13,7 +14,7 @@ export function BacknumberIssue({ issue, coverImage }: BacknumberIssueProps) {
         <div className="aspect-[3/4] w-full max-w-[280px] overflow-hidden md:max-w-none">
           {coverImage ? (
             <img
-              src={coverImage}
+              src={withBasePath(coverImage)}
               alt={`${issue.title} 表紙`}
               className="h-full w-full object-contain"
             />
