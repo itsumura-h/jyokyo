@@ -54,7 +54,7 @@ export function Company() {
                       本社
                     </td>
                     <td className="py-4 text-foreground">
-                      〒204-0011 東京都清瀬市下清戸３丁目９２８−２
+                      350-2202 埼玉県鶴ヶ島市五味ケ谷15-12-102
                     </td>
                   </tr>
                 </tbody>
