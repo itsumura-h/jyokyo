@@ -1,1 +1,1 @@
-https://itsumura-h.github.io/jyokyo/
+https://jokyo.org/
