@@ -52,9 +52,6 @@ export function Footer() {
           <p className="text-xs font-light text-background/30">
             © 2026 情況出版. All rights reserved.
           </p>
-          <p className="text-xs font-light text-background/30">
-            東京都千代田区
-          </p>
         </div>
       </div>
     </footer>
