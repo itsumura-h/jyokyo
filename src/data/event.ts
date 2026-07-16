@@ -14,11 +14,22 @@ export interface EventItem {
 
 export const events: EventItem[] = [
   {
+    id: '大学の終わり、人文学の始まり',
+    title: '大学の終わり、人文学の始まり',
+    flyerImage: '/images/event/end-university-start-liberalarts.webp',
+    flyerAlt: '大学の終わり、人文学の始まり イベントフライヤー',
+    ticketUrl: 'https://livepocket.jp/e/1_kp_',
+    date: '2026年7月20日（月）',
+    time: '開場 15:00 / 開演 15:20 / 終演 17:00',
+    venue: 'Crypto Lounge GOX',
+    venueAddress: '東京都新宿区歌舞伎町２丁目１９−１５ てなむタウンビル6階',
+    ticketPrice: '会場 ¥2,000 / 配信(YouTube) ¥1,500',
+  },
+  {
     id: 'situation-room-vol1',
     title: 'The Situation Room Vol.1',
     flyerImage: '/images/event/situationRoomVol1.jpg',
     flyerAlt: 'The Situation Room Vol.1 イベントフライヤー',
-    // ticketUrl: 'https://livepocket.jp/e/pj-qb',
     ticketUrl: 'https://livepocket.jp/e/ndt0l',
     date: '2026年5月31日（日）',
     time: '開場 15:00 / 開演 15:20 / 終演 17:00',
